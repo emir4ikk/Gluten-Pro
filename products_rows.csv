@@ -1,0 +1,33 @@
+id,created_at,title,description,price,image_url,category,is_active
+1,2026-01-20 17:33:29.626256+00,Вареники с вишней,Коробка 500 гр.,500,https://supabase.apexstack.ru/storage/v1/object/public/shop/Vareniki%20s%20VISHNEY.webp,Вареники,true
+2,2026-01-20 17:33:29.626256+00,Вареники с грибами,Коробка 500 гр.,500,https://supabase.apexstack.ru/storage/v1/object/public/shop/Vareniki%20s%20GRIBAMI.webp,Вареники,true
+3,2026-01-20 17:33:29.626256+00,Вареники с капустой,Коробка 500 гр.,500,https://supabase.apexstack.ru/storage/v1/object/public/shop/Vareniki%20s%20KAPUSTOY.jpg,Вареники,true
+4,2026-01-20 17:33:29.626256+00,Вареники с картофелем,Коробка 500 гр.,500,https://supabase.apexstack.ru/storage/v1/object/public/shop/Vareniki%20s%20KARTOSHKOY.jpg,Вареники,true
+5,2026-01-20 17:33:29.626256+00,Вареники с картофелем и грибами,Коробка 500 гр.,500,https://supabase.apexstack.ru/storage/v1/object/public/shop/Vareniki%20s%20Kartoshkoy%20I%20Kapustoy.jpg,Вареники,true
+6,2026-01-20 17:33:29.626256+00,Пельмени с индейкой,Коробка 500 гр.,550,https://supabase.apexstack.ru/storage/v1/object/public/shop/pelmeni%20s%20indeykoy.jpg,Пельмени,true
+7,2026-01-20 17:33:29.626256+00,Пельмени с говядиной,Коробка 500 гр.,550,https://supabase.apexstack.ru/storage/v1/object/public/shop/pelmeni-iz-govyadiny.jpg,Пельмени,true
+8,2026-01-20 17:33:29.626256+00,Пельмени детские (индейка/говядина),Коробка 500 гр.,600,https://supabase.apexstack.ru/storage/v1/object/public/shop/detskie-pelmeni.jpg,Пельмени,true
+9,2026-01-20 17:33:29.626256+00,Манты с рубленной говядиной,Коробка 12 шт.,600,https://supabase.apexstack.ru/storage/v1/object/public/shop/manti-srublenoy%20govadini.webp,Манты,true
+10,2026-01-20 17:33:29.626256+00,Манты с фаршем индейки,Коробка 12 шт.,600,https://supabase.apexstack.ru/storage/v1/object/public/shop/manti%20s%20indeykoy.jpg,Манты,true
+11,2026-01-20 17:33:29.626256+00,Биточки из индейки,Коробка 9 шт.,800,https://supabase.apexstack.ru/storage/v1/object/public/shop/bito4ki%20iz%20indeyki.webp,Котлеты и Тефтели,true
+12,2026-01-20 17:33:29.626256+00,Котлеты говяжьи,Коробка 9 шт.,850,https://supabase.apexstack.ru/storage/v1/object/public/shop/kotleti%20%20iz%20govyadini.jpeg,Котлеты и Тефтели,true
+13,2026-01-20 17:33:29.626256+00,Тефтели,Коробка 9 шт.,800,https://supabase.apexstack.ru/storage/v1/object/public/shop/teftely.JPG,Котлеты и Тефтели,true
+14,2026-01-20 17:33:29.626256+00,Люля кебаб,6 шт. (по 100 гр.),900,https://supabase.apexstack.ru/storage/v1/object/public/shop/lula%20kebab.jpg,Котлеты и Тефтели,true
+15,2026-01-20 17:33:29.626256+00,Ленивые голубцы,Коробка 9 шт.,550,https://supabase.apexstack.ru/storage/v1/object/public/shop/lenivye-golubtsy.webp,Котлеты и Тефтели,true
+16,2026-01-20 17:33:29.626256+00,Паштет из говяжьей печени,250 гр.,350,https://supabase.apexstack.ru/storage/v1/object/public/shop/pashtet%20iz%20pe4eni%20govajey.webp,Котлеты и Тефтели,true
+17,2026-01-20 17:33:29.626256+00,Фрикадельки на суп,500 гр.,550,https://supabase.apexstack.ru/storage/v1/object/public/shop/frikadelki_dlya_supa.jpg,Котлеты и Тефтели,true
+18,2026-01-20 17:33:29.626256+00,Котлеты по-киевски (8 шт),8 шт.,1110,https://supabase.apexstack.ru/storage/v1/object/public/shop/kotleti%20po%20kievsky.JPG,Котлеты и Тефтели,true
+19,2026-01-20 17:33:29.626256+00,Котлеты по-киевски (4 шт),4 шт.,550,https://supabase.apexstack.ru/storage/v1/object/public/shop/kotleti%20po%20kievsky%204%20shtuki.JPG,Котлеты и Тефтели,true
+20,2026-01-20 17:33:29.626256+00,Бульон 0.5л,0.5 л.,250,https://supabase.apexstack.ru/storage/v1/object/public/shop/bulyoun%20pol%20litra.JPG,Бульон,true
+21,2026-01-20 17:33:29.626256+00,Бульон 1л,1 л.,450,https://supabase.apexstack.ru/storage/v1/object/public/shop/bulyon%20litr.JPG,Бульон,true
+22,2026-01-20 17:33:29.626256+00,Блины с вишней,6 шт.,450,https://supabase.apexstack.ru/storage/v1/object/public/shop/bliny%20s%20vishney.jpg,Блины,true
+23,2026-01-20 17:33:29.626256+00,Блины с творогом,6 шт.,450,https://supabase.apexstack.ru/storage/v1/object/public/shop/bliny%20s%20tvorogom.jpg,Блины,true
+24,2026-01-20 17:33:29.626256+00,Блины с яблоком и корицей,6 шт.,450,https://supabase.apexstack.ru/storage/v1/object/public/shop/blinchiki-s-yablokom.jpg,Блины,true
+25,2026-01-20 17:33:29.626256+00,Блины с индейкой,6 шт.,450,https://supabase.apexstack.ru/storage/v1/object/public/shop/bliny%20s%20indeykoy%20i%20gribami.jpg,Блины,true
+26,2026-01-20 17:33:29.626256+00,Блины с индейкой и грибами,6 шт.,450,https://supabase.apexstack.ru/storage/v1/object/public/shop/bliny%20s%20indeykoy.jpg,Блины,true
+27,2026-01-20 17:33:29.626256+00,Творожные шарики,250 гр.,350,https://supabase.apexstack.ru/storage/v1/object/public/shop/tvorojnye-shariki.jpg,Сырники и Творог,true
+28,2026-01-20 17:33:29.626256+00,Сырники,Коробка 9 шт.,600,https://supabase.apexstack.ru/storage/v1/object/public/shop/sirniki.jpg,Сырники и Творог,true
+29,2026-01-20 17:33:29.626256+00,Сарма,600 гр.,650,https://supabase.apexstack.ru/storage/v1/object/public/shop/sarma.jpg,Голубцы и Сарма,true
+30,2026-01-20 17:33:29.626256+00,Голубцы,600 гр.,650,https://supabase.apexstack.ru/storage/v1/object/public/shop/golubcy.jpg,Голубцы и Сарма,true
+31,2026-01-20 17:33:29.626256+00,Джем без сахара персик/абрикос,250 гр.,350,https://supabase.apexstack.ru/storage/v1/object/public/shop/abrikosy-bez-sahara-na-zimu.jpg,Соусы,true
+32,2026-01-20 17:33:29.626256+00,Аджика,200 мл.,350,https://supabase.apexstack.ru/storage/v1/object/public/shop/ajika.webp,Соусы,true
