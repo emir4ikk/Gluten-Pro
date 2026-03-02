@@ -122,96 +122,131 @@ const AddressModal = ({ onClose, onConfirm }) => {
                     </div>
 
                     <p className="modal-subtitle">Выберите способ получения заказа, чтобы увидеть актуальное меню</p>
-                    <h2 className="modal-title">Куда доставим?</h2>
 
-                    <div className="address-form">
-                        <div className="input-field">
-                            <label>Ваш город</label>
-                            <select value={city} onChange={(e) => setCity(e.target.value)}>
-                                <option value="Евпатория">Евпатория</option>
-                            </select>
-                        </div>
+                    {deliveryType === 'courier' ? (
+                        <>
+                            <h2 className="modal-title">Куда доставим?</h2>
+                            <div className="address-form">
+                                <div className="input-field">
+                                    <label>Ваш город</label>
+                                    <select value={city} onChange={(e) => setCity(e.target.value)}>
+                                        <option value="Евпатория">Евпатория</option>
+                                    </select>
+                                </div>
 
-                        <div className="input-field">
-                            <label>Улица <span className="required">*</span></label>
-                            <input
-                                id="suggest-street"
-                                type="text"
-                                value={street}
-                                onChange={(e) => setStreet(e.target.value)}
-                                placeholder="Начните вводить..."
-                                required
-                            />
-                        </div>
+                                <div className="input-field">
+                                    <label>Улица <span className="required">*</span></label>
+                                    <input
+                                        id="suggest-street"
+                                        type="text"
+                                        value={street}
+                                        onChange={(e) => setStreet(e.target.value)}
+                                        placeholder="Начните вводить..."
+                                        required
+                                    />
+                                </div>
 
-                        <div className="input-field half-width">
-                            <label>Дом <span className="required">*</span></label>
-                            <input
-                                type="text"
-                                value={house}
-                                onChange={(e) => setHouse(e.target.value)}
-                                required
-                            />
-                        </div>
+                                <div className="input-field half-width">
+                                    <label>Дом <span className="required">*</span></label>
+                                    <input
+                                        type="text"
+                                        value={house}
+                                        onChange={(e) => setHouse(e.target.value)}
+                                        required
+                                    />
+                                </div>
 
-                        <div className="address-type-section">
-                            <label className="type-label">Тип адреса доставки <span className="required">*</span></label>
-                            <div className="type-toggle">
-                                <button
-                                    type="button"
-                                    className={`type-btn ${addressType === 'apartment' ? 'active' : ''}`}
-                                    onClick={() => setAddressType('apartment')}
-                                >
-                                    Квартира
-                                </button>
-                                <button
-                                    type="button"
-                                    className={`type-btn ${addressType === 'house' ? 'active' : ''}`}
-                                    onClick={() => setAddressType('house')}
-                                >
-                                    Дом
-                                </button>
-                                <button
-                                    type="button"
-                                    className={`type-btn ${addressType === 'office' ? 'active' : ''}`}
-                                    onClick={() => setAddressType('office')}
-                                >
-                                    Офис
+                                <div className="address-type-section">
+                                    <label className="type-label">Тип адреса доставки <span className="required">*</span></label>
+                                    <div className="type-toggle">
+                                        <button
+                                            type="button"
+                                            className={`type-btn ${addressType === 'apartment' ? 'active' : ''}`}
+                                            onClick={() => setAddressType('apartment')}
+                                        >
+                                            Квартира
+                                        </button>
+                                        <button
+                                            type="button"
+                                            className={`type-btn ${addressType === 'house' ? 'active' : ''}`}
+                                            onClick={() => setAddressType('house')}
+                                        >
+                                            Дом
+                                        </button>
+                                        <button
+                                            type="button"
+                                            className={`type-btn ${addressType === 'office' ? 'active' : ''}`}
+                                            onClick={() => setAddressType('office')}
+                                        >
+                                            Офис
+                                        </button>
+                                    </div>
+                                </div>
+
+                                {addressType === 'apartment' && (
+                                    <div className="details-grid">
+                                        <div className="input-field">
+                                            <label>Квартира <span className="required">*</span></label>
+                                            <input type="text" required />
+                                        </div>
+                                        <div className="input-field">
+                                            <label>Подъезд</label>
+                                            <input type="text" />
+                                        </div>
+                                        <div className="input-field">
+                                            <label>Этаж</label>
+                                            <input type="text" />
+                                        </div>
+                                        <div className="input-field">
+                                            <label>Домофон</label>
+                                            <input type="text" />
+                                        </div>
+                                    </div>
+                                )}
+
+                                <button type="button" className="confirm-btn" onClick={handleSubmit}>
+                                    Подтвердить
                                 </button>
                             </div>
-                        </div>
-
-                        {addressType === 'apartment' && (
-                            <div className="details-grid">
-                                <div className="input-field">
-                                    <label>Квартира <span className="required">*</span></label>
-                                    <input type="text" required />
+                        </>
+                    ) : (
+                        <>
+                            <h2 className="modal-title">Пункт самовывоза</h2>
+                            <div className="pickup-info">
+                                <div className="pickup-point-card">
+                                    <div className="pickup-icon">📍</div>
+                                    <div className="pickup-details">
+                                        <h3 className="pickup-address">г. Евпатория, ул. 51-й Армии, д. 54</h3>
+                                        <div className="pickup-hours">
+                                            <span className="hours-icon">🕐</span>
+                                            <span>Ежедневно с <strong>9:00</strong> до <strong>21:00</strong></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="input-field">
-                                    <label>Подъезд</label>
-                                    <input type="text" />
-                                </div>
-                                <div className="input-field">
-                                    <label>Этаж</label>
-                                    <input type="text" />
-                                </div>
-                                <div className="input-field">
-                                    <label>Домофон</label>
-                                    <input type="text" />
-                                </div>
+                                <button type="button" className="confirm-btn" onClick={() => {
+                                    onConfirm({
+                                        type: 'pickup',
+                                        city: 'Евпатория',
+                                        street: 'ул. 51-й Армии',
+                                        house: '54',
+                                        addressType: 'pickup'
+                                    });
+                                    onClose();
+                                }}>
+                                    Заберу отсюда
+                                </button>
                             </div>
-                        )}
-
-                        <button type="button" className="confirm-btn" onClick={handleSubmit}>
-                            Подтвердить
-                        </button>
-                    </div>
+                        </>
+                    )}
                 </div>
 
                 {/* Right side: Yandex Map */}
                 <div className="modal-map-section">
                     <iframe
-                        src="https://yandex.ru/map-widget/v1/?ll=33.364239%2C45.193181&z=13"
+                        src={deliveryType === 'pickup'
+                            ? "https://yandex.ru/map-widget/v1/?ll=33.380087%2C45.197628&z=16&pt=33.380087%2C45.197628%2Cpm2rdm"
+                            : "https://yandex.ru/map-widget/v1/?ll=33.364239%2C45.193181&z=13"
+                        }
                         title="Yandex Maps Евпатория"
                         width="100%"
                         height="100%"

@@ -183,6 +183,55 @@
     background-color: #388E3C;
 }
 
+/* Pickup Section */
+.pickup-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pickup-point-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    background: rgba(76, 175, 80, 0.05);
+}
+
+.pickup-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.pickup-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.pickup-address {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.pickup-hours {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.hours-icon {
+    font-size: 1rem;
+}
+
 /* Scrollbar styling for form */
 .modal-form-section::-webkit-scrollbar {
     width: 6px;

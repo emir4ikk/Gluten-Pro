@@ -47,7 +47,7 @@ const Checkout = ({ onBack }) => {
                 if (selectedAddress.type === 'courier') {
                     addressInfo = `Курьером: г. ${selectedAddress.city}, ул. ${selectedAddress.street}, д. ${selectedAddress.house}, Тип: ${selectedAddress.addressType}`;
                 } else {
-                    addressInfo = 'Самовывоз';
+                    addressInfo = 'Самовывоз: г. Евпатория, ул. 51-й Армии, д. 54';
                 }
             }
 
@@ -154,21 +154,31 @@ ${itemsList}
                         {/* Address Section */}
                         <div className="checkout-card">
                             <div className="address-header">
-                                <h3 className="card-title">Адрес доставки</h3>
+                                <h3 className="card-title">
+                                    {selectedAddress?.type === 'pickup' ? 'Самовывоз' : 'Адрес доставки'}
+                                </h3>
                                 <button type="button" className="select-delivery-btn" onClick={() => setIsAddressModalOpen(true)}>
-                                    Выбрать доставку
+                                    {selectedAddress ? 'Изменить' : 'Выбрать доставку'}
                                 </button>
                             </div>
 
                             <div className="address-selection-box">
                                 {selectedAddress ? (
-                                    <div className="selected-address-info">
-                                        <strong>Доставка курьером:</strong>
-                                        <p>{selectedAddress.city}, ул. {selectedAddress.street}, д. {selectedAddress.house}</p>
-                                        <button type="button" className="change-address-btn" onClick={() => setIsAddressModalOpen(true)}>
-                                            Изменить
-                                        </button>
-                                    </div>
+                                    selectedAddress.type === 'pickup' ? (
+                                        <div className="selected-address-info">
+                                            <strong>📍 Самовывоз:</strong>
+                                            <p>г. Евпатория, ул. 51-й Армии, д. 54</p>
+                                            <p className="pickup-hours-text">🕐 Ежедневно с 9:00 до 21:00</p>
+                                        </div>
+                                    ) : (
+                                        <div className="selected-address-info">
+                                            <strong>Доставка курьером:</strong>
+                                            <p>{selectedAddress.city}, ул. {selectedAddress.street}, д. {selectedAddress.house}</p>
+                                            <button type="button" className="change-address-btn" onClick={() => setIsAddressModalOpen(true)}>
+                                                Изменить
+                                            </button>
+                                        </div>
+                                    )
                                 ) : (
                                     <button type="button" className="add-address-btn" onClick={() => setIsAddressModalOpen(true)}>
                                         <span className="plus-icon">+</span>

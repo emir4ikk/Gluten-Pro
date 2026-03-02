@@ -267,6 +267,12 @@
     color: #999;
 }
 
+.pickup-hours-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
 @media (max-width: 900px) {
     .checkout-content {
         flex-direction: column;
